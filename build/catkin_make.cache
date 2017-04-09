@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/maurice/git/WoR_lynxmotion_arm_Simulatie/devel -DCMAKE_INSTALL_PREFIX=/home/maurice/git/WoR_lynxmotion_arm_Simulatie/install -G Unix Makefiles
