@@ -19,9 +19,9 @@ except ImportError:
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/maurice/git/WoR_lynxmotion_arm_Simulatie/devel/env.sh')
+code = generate_environment_script('/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/env.sh')
 
-output_filename = '/home/maurice/git/WoR_lynxmotion_arm_Simulatie/build/catkin_generated/setup_cached.sh'
+output_filename = '/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     #print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

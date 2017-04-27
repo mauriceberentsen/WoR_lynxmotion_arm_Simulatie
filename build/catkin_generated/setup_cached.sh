@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/maurice/git/WoR_lynxmotion_arm_Simulatie/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/maurice/git/WoR_lynxmotion_arm_Simulatie/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/maurice/git/WoR_lynxmotion_arm_Simulatie/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/maurice/git/WoR_lynxmotion_arm_Simulatie/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/maurice/git/WoR_lynxmotion_arm_Simulatie/src:/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src:/opt/ros/kinetic/share"

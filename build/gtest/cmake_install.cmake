@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maurice/git/WoR_lynxmotion_arm_Simulatie/install")
+  set(CMAKE_INSTALL_PREFIX "/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
