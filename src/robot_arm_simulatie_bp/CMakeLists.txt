@@ -129,6 +129,7 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(robot_arm_simulatie_bp_node src/robot_arm_simulatie_bp_node.cpp)
+add_executable(controller_node src/controller.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -139,6 +140,9 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
+target_link_libraries(controller_node
+  ${catkin_LIBRARIES}
+)
 #############
 ## Install ##
 #############

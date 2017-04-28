@@ -245,7 +245,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=1,2 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=3,4 "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +277,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=3,4 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=5,6 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -306,26 +306,27 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory robot_arm_simulatie_bp
 
 # Convenience name for "all" pass in the directory.
-robot_arm_simulatie_bp/all:
+robot_arm_simulatie_bp/all: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/all
 
 .PHONY : robot_arm_simulatie_bp/all
 
 # Convenience name for "clean" pass in the directory.
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_py.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_py.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean
 
 .PHONY : robot_arm_simulatie_bp/clean
 
@@ -335,322 +336,34 @@ robot_arm_simulatie_bp/preinstall:
 .PHONY : robot_arm_simulatie_bp/preinstall
 
 #=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_py: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -687,6 +400,102 @@ clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -715,6 +524,102 @@ robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -751,66 +656,199 @@ clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_lisp.di
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/all
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+roscpp_generate_messages_nodejs: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_nodejs: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# clean rule for target.
-robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-clean: robot_arm_simulatie_bp/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/controller_node.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=1,2 "Built target controller_node"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/all
+
+# Include target in all.
+all: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/rule
+
+# Convenience name for target.
+controller_node: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/rule
+
+.PHONY : controller_node
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean
 
 .PHONY : clean
 
