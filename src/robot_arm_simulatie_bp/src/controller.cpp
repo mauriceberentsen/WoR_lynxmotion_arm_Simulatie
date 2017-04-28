@@ -65,7 +65,7 @@ void singleServoCommand(const std::string& command,bool spd,bool time)
 	  }
 	  else
 	  {
-		  ROS_INFO("Invalid input");
+		  ROS_INFO("Invalid input in function singleServoCommand");
 	  }
 }
 
@@ -84,7 +84,7 @@ void multipleServoCommand(const std::string& command,bool spd, bool time)
 		 {
 			 for(std::size_t i = 0; i<n_servo; ++i)
 			 {
-				search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+[[:space:]]*S([[:digit:]]+))[[:space:]]*";
+				search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+)[[:space:]]*S([[:digit:]]+)[[:space:]]*";
 			 }
 			 search_query+="T([[:digit:]]+)";
 			 e = search_query;
@@ -103,18 +103,21 @@ void multipleServoCommand(const std::string& command,bool spd, bool time)
 					std::string temp = command.substr(n_pulse,(n_speed-n_pulse));
 					std::size_t pos_speed_temp= temp.find('#');
 
-    				if(pos_speed_temp ==std::string::npos)
+    				if(pos_speed_temp == std::string::npos)
     				{
     				    std::cout<<i<<std::endl;
-    				    search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+[[:space:]]*S([[:digit:]]+))[[:space:]]*";
+    				    search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+)[[:space:]]*S([[:digit:]]+)[[:space:]]*";
     				    ++n_speed;
     				}
-    				search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+[[:space:]]*";
+    				else
+    				{
+    					search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+)[[:space:]]*";
+    				}
     			    ++n_pulse;
 				}
 				else
 				{
-					search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+[[:space:]]*";
+					search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+)[[:space:]]*";
 				}
 			 }
 			 search_query+="T([[:digit:]]+)";
@@ -145,10 +148,16 @@ void multipleServoCommand(const std::string& command,bool spd, bool time)
 		  ROS_INFO("I saw_MatchResults 2: [%s]", matchResults.str(2).c_str());
 		  ROS_INFO("I saw_MatchResults 3: [%s]", matchResults.str(3).c_str());
 		  ROS_INFO("I saw_MatchResults 4: [%s]", matchResults.str(4).c_str());
+		  ROS_INFO("I saw_MatchResults 5: [%s]", matchResults.str(5).c_str());
+		  ROS_INFO("I saw_MatchResults 6: [%s]", matchResults.str(6).c_str());
+		  ROS_INFO("I saw_MatchResults 7: [%s]", matchResults.str(7).c_str());
+		  ROS_INFO("I saw_MatchResults 8: [%s]", matchResults.str(8).c_str());
+		  ROS_INFO("I saw_MatchResults 9: [%s]", matchResults.str(9).c_str());
 	  }
 	  else
 	  {
-		  ROS_INFO("Invalid input");
+		  ROS_INFO("search_query was: [%s]", search_query.c_str());
+		  ROS_INFO("Invalid input in function multiServoCommand");
 	  }
 
 }
@@ -168,7 +177,7 @@ void parseMessage(const std_msgs::String::ConstPtr& msg)
 	}
 	else
 	{
-		 ROS_INFO("Invalid message");
+		 ROS_INFO("Invalid message in function parseMessage");
 	}
 }
 
