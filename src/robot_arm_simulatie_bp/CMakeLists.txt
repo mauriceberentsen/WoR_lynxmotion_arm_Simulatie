@@ -130,10 +130,12 @@ include_directories(
 ## Declare a C++ executable
 # add_executable(robot_arm_simulatie_bp_node src/robot_arm_simulatie_bp_node.cpp)
 add_executable(controller_node src/controller.cpp)
+add_executable(joint_aansturing_node src/joint_aansturing.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(robot_arm_simulatie_bp_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(joint_aansturing_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(robot_arm_simulatie_bp_node
@@ -141,6 +143,9 @@ add_executable(controller_node src/controller.cpp)
 # )
 
 target_link_libraries(controller_node
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(joint_aansturing_node
   ${catkin_LIBRARIES}
 )
 #############

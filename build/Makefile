@@ -464,6 +464,19 @@ controller_node/fast:
 	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build
 .PHONY : controller_node/fast
 
+#=============================================================================
+# Target rules for targets named joint_aansturing_node
+
+# Build rule for target.
+joint_aansturing_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 joint_aansturing_node
+.PHONY : joint_aansturing_node
+
+# fast build rule for target.
+joint_aansturing_node/fast:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build
+.PHONY : joint_aansturing_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -500,6 +513,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... controller_node"
+	@echo "... joint_aansturing_node"
 .PHONY : help
 
 

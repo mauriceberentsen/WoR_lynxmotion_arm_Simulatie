@@ -277,6 +277,9 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for joint_state_publisher.
+joint_state_publisher_DIR:PATH=/opt/ros/kinetic/share/joint_state_publisher/cmake
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
 

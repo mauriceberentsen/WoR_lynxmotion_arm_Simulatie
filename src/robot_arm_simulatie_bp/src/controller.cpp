@@ -105,7 +105,6 @@ void multipleServoCommand(const std::string& command,bool spd, bool time)
 
     				if(pos_speed_temp == std::string::npos)
     				{
-    				    std::cout<<i<<std::endl;
     				    search_query+="#([[:digit:]]+)[[:space:]]*P([[:digit:]]+)[[:space:]]*S([[:digit:]]+)[[:space:]]*";
     				    ++n_speed;
     				}

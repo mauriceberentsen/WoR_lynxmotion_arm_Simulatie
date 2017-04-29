@@ -177,4 +177,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/DependInfo.cmake"
+  "robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/DependInfo.cmake"
   )

@@ -66,6 +66,18 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -120,18 +132,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -405,6 +405,21 @@ controller_node/fast:
 	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build
 .PHONY : controller_node/fast
 
+# Convenience name for target.
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule
+
+# Convenience name for target.
+joint_aansturing_node: robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule
+
+.PHONY : joint_aansturing_node
+
+# fast build rule for target.
+joint_aansturing_node/fast:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build
+.PHONY : joint_aansturing_node/fast
+
 src/controller.o: src/controller.cpp.o
 
 .PHONY : src/controller.o
@@ -432,6 +447,33 @@ src/controller.cpp.s:
 	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
+src/joint_aansturing.o: src/joint_aansturing.cpp.o
+
+.PHONY : src/joint_aansturing.o
+
+# target to build an object file
+src/joint_aansturing.cpp.o:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o
+.PHONY : src/joint_aansturing.cpp.o
+
+src/joint_aansturing.i: src/joint_aansturing.cpp.i
+
+.PHONY : src/joint_aansturing.i
+
+# target to preprocess a source file
+src/joint_aansturing.cpp.i:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.i
+.PHONY : src/joint_aansturing.cpp.i
+
+src/joint_aansturing.s: src/joint_aansturing.cpp.s
+
+.PHONY : src/joint_aansturing.s
+
+# target to generate assembly for a file
+src/joint_aansturing.cpp.s:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.s
+.PHONY : src/joint_aansturing.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -439,6 +481,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
+	@echo "... install"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
@@ -458,12 +501,15 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... controller_node"
+	@echo "... joint_aansturing_node"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/joint_aansturing.o"
+	@echo "... src/joint_aansturing.i"
+	@echo "... src/joint_aansturing.s"
 .PHONY : help
 
 

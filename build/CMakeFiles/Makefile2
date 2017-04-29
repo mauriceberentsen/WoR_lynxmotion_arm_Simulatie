@@ -307,6 +307,7 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 
 # Convenience name for "all" pass in the directory.
 robot_arm_simulatie_bp/all: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/all
+robot_arm_simulatie_bp/all: robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/all
 
 .PHONY : robot_arm_simulatie_bp/all
 
@@ -327,6 +328,7 @@ robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generat
 robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean
+robot_arm_simulatie_bp/clean: robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/clean
 
 .PHONY : robot_arm_simulatie_bp/clean
 
@@ -849,6 +851,43 @@ robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean:
 
 # clean rule for target.
 clean: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir
+
+# All Build rule for target.
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/all:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/depend
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=7,8 "Built target joint_aansturing_node"
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/all
+
+# Include target in all.
+all: robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles 0
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule
+
+# Convenience name for target.
+joint_aansturing_node: robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/rule
+
+.PHONY : joint_aansturing_node
+
+# clean rule for target.
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/clean:
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/clean
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/clean
+
+# clean rule for target.
+clean: robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/clean
 
 .PHONY : clean
 
