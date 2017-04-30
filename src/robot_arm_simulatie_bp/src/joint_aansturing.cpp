@@ -7,9 +7,9 @@
 
 #include <robot_state_publisher/robot_state_publisher.h>
 #include <sensor_msgs/JointState.h>
-#include <std_msgs/Float64MultiArray.h>
-#include <std_msgs/Int32MultiArray.h>
-//#include "robot_arm_simulatie_bp/Num.h"
+//#include <std_msgs/Float64MultiArray.h>
+//#include <std_msgs/Int32MultiArray.h>
+#include "robot_arm_simulatie_bp/Num.h"
 
 float g_base_link2turret=0;
 float g_turret2upperarm=0;
@@ -19,7 +19,7 @@ float g_wrist2hand=0;
 float g_gripper_left2hand=0;
 float g_gripper_right2hand=0;
 
-void callBack(std_msgs::Float64MultiArray input)
+void callBack(robot_arm_simulatie_bp::Num input)
 {
 	  ROS_INFO("input [%f]",g_base_link2turret=input.data.at(0));
 	  ROS_INFO("input [%f]",g_turret2upperarm=input.data.at(1));
@@ -45,7 +45,7 @@ int main(int argc, char **argv)
 	//void publishFixedTransforms();
 
 	ros::Publisher joint_states_pub = n.advertise<sensor_msgs::JointState>("joint_states", 1000);
-	ros::Subscriber sub = n.subscribe<std_msgs::Float64MultiArray>("input", 1000,callBack);
+	ros::Subscriber sub = n.subscribe<robot_arm_simulatie_bp::Num>("input", 1000,callBack);
 	ros::Rate loop_rate(10);
 
 	std::size_t count = 0;

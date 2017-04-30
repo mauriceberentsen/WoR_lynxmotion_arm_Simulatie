@@ -7,7 +7,8 @@
 
 	<!-- Start nodes op die de robot arm kunnen aansturen -->
 	<!--<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" /> -->
-	<<node name="joint_aansturing_node" pkg="robot_arm_simulatie_bp" type="joint_aansturing_node" />
+	<node name="joint_aansturing_node" pkg="robot_arm_simulatie_bp" type="joint_aansturing_node" />
+	<node name="controller_node" pkg="robot_arm_simulatie_bp" type="controller_node" />
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
 	
 	<!-- Start rviz op met gegeven instellingen -->

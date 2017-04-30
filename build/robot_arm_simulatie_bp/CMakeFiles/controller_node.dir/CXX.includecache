@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/include/robot_arm_simulatie_bp/Num.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/controller.cpp
 ros/ros.h
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/ros/ros.h
@@ -16,6 +32,10 @@ regex
 algorithm
 -
 iostream
+-
+robot_arm_simulatie_bp/Num.h
+/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/robot_arm_simulatie_bp/Num.h
+math.h
 -
 
 /opt/ros/kinetic/include/ros/advertise_options.h

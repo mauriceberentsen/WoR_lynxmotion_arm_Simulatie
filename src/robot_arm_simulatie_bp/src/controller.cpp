@@ -10,7 +10,8 @@
 #include <regex>
 #include <algorithm>
 #include <iostream>
-
+#include "robot_arm_simulatie_bp/Num.h"
+#include <math.h>
 //Single Servo Commands
 //# <ch> P <pw> ​S​​<spd>​​T​<time> <cr>
 /*
@@ -30,8 +31,62 @@ This affects all servos (65535 max) *
 //Example 1: #5 P1600 #10 P750 T2500 <cr>
 
 
+double pwmToRadial(std::size_t input_pwm, std::size_t min_pwm, std::size_t max_pwm)
+{
+	return (input_pwm - min_pwm) * (M_PI - -M_PI) / (max_pwm - min_pwm) + -M_PI;
+}
+
+//double Servo::map(double x, double  in_min, double  in_max, double  out_min, double  out_max)
+//{
+//  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+//}
+
+void pubJointStates(std::size_t pin, std::size_t pwm,ros::Publisher& pub)
+{
+	robot_arm_simulatie_bp::Num joint_pos;
+	joint_pos.data = {0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+
+//	Servo(0,-90,90,640,2360),
+//	Servo(1,-30,90,1800,800),
+//	Servo(2,0,135,680,1920),
+//	Servo(3,-90,90,630,2430),
+//	Servo(4,1,0,850,2300),
+//	Servo(5,-90,90,700,2400)
+	if(pin==0)
+	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,640,2360);
+	}
+	else if(pin==1)
+	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,1800,800);
+	}
+	else if(pin==2)
+	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,680,1920);
+	}
+	else if(pin==3)
+	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,630,2430);
+	}
+	else if(pin==4)
+	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,850,2300);
+	}
+	else if(pin==5 || pin==6)
+	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,700,2400);
+	}
+	else
+	{
+		ROS_INFO("Invalid joint control request");
+		return;
+	}
+
+	pub.publish(joint_pos);
+}
+
 //Single Servo Commands
-void singleServoCommand(const std::string& command,bool spd,bool time)
+void singleServoCommand(const std::string& command,bool spd,bool time,ros::Publisher& pub)
 {
 	  std::regex e;
 
@@ -62,6 +117,7 @@ void singleServoCommand(const std::string& command,bool spd,bool time)
 		  ROS_INFO("I saw_MatchResults 2: [%s]", matchResults.str(2).c_str());
 		  ROS_INFO("I saw_MatchResults 3: [%s]", matchResults.str(3).c_str());
 		  ROS_INFO("I saw_MatchResults 4: [%s]", matchResults.str(4).c_str());
+		  pubJointStates(stoul(matchResults.str(1)),stoul(matchResults.str(2)),pub);
 	  }
 	  else
 	  {
@@ -160,7 +216,7 @@ void multipleServoCommand(const std::string& command,bool spd, bool time)
 	  }
 
 }
-void parseMessage(const std_msgs::String::ConstPtr& msg)
+void parseMessage(const std_msgs::String::ConstPtr& msg,ros::Publisher& pub)
 {
 	std::size_t n_pulse = std::count(msg->data.begin(),msg->data.end(),'P');
 	bool time  = std::count(msg->data.begin(),msg->data.end(),'T') > 0;
@@ -172,7 +228,7 @@ void parseMessage(const std_msgs::String::ConstPtr& msg)
 	}
 	else if(n_pulse==1)
 	{
-		singleServoCommand(msg->data,speed,time);
+		singleServoCommand(msg->data,speed,time,pub);
 	}
 	else
 	{
@@ -186,7 +242,9 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "controller");
 	ros::NodeHandle n;
 
-	ros::Subscriber sub = n.subscribe("SSC_32U_messages", 1000, parseMessage);
+
+	ros::Publisher pub = n.advertise<robot_arm_simulatie_bp::Num>("input", 1000);
+	ros::Subscriber sub = n.subscribe<std_msgs::String>("SSC_32U_messages", 1000,boost::bind(&parseMessage, _1, pub));
 
 	ros::spin();
 

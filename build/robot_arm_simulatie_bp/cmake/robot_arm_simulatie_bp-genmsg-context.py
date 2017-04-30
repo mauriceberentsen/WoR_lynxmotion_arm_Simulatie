@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = ""
+messages_str = "/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/msg/Num.msg"
 services_str = ""
 pkg_name = "robot_arm_simulatie_bp"
 dependencies_str = "std_msgs"
