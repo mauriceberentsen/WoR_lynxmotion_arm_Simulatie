@@ -1,3 +1,4 @@
+<!--TODO uitzoeken hoe begin positie inlezen en dit in code initializeren-->
 <robot name="lynxmotion_arm">
 	<link name="base_link">
 		<visual>
@@ -91,7 +92,7 @@
 	<joint name="upperarm2forearm" type="continuous">
 		<parent link="upperarm" />
 		<child link="forearm" />
-		<origin xyz="0 0 0.18" rpy="0 1.5708 0" />
+		<origin xyz="0 0 0.18" rpy="0 0 0" /> <!-- orgineel : rpy="0 1.5708 0" /> -->
 		<axis xyz="0 1 0" />
 	</joint>
 	<joint name="forearm2wrist" type="continuous">

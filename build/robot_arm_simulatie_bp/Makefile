@@ -600,6 +600,33 @@ robot_arm_simulatie_bp_geneus/fast:
 	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/robot_arm_simulatie_bp_geneus.dir/build.make robot_arm_simulatie_bp/CMakeFiles/robot_arm_simulatie_bp_geneus.dir/build
 .PHONY : robot_arm_simulatie_bp_geneus/fast
 
+src/VirtualController.o: src/VirtualController.cpp.o
+
+.PHONY : src/VirtualController.o
+
+# target to build an object file
+src/VirtualController.cpp.o:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o
+.PHONY : src/VirtualController.cpp.o
+
+src/VirtualController.i: src/VirtualController.cpp.i
+
+.PHONY : src/VirtualController.i
+
+# target to preprocess a source file
+src/VirtualController.cpp.i:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.i
+.PHONY : src/VirtualController.cpp.i
+
+src/VirtualController.s: src/VirtualController.cpp.s
+
+.PHONY : src/VirtualController.s
+
+# target to generate assembly for a file
+src/VirtualController.cpp.s:
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build && $(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.s
+.PHONY : src/VirtualController.cpp.s
+
 src/controller.o: src/controller.cpp.o
 
 .PHONY : src/controller.o
@@ -696,6 +723,9 @@ help:
 	@echo "... robot_arm_simulatie_bp_generate_messages_eus"
 	@echo "... robot_arm_simulatie_bp_gencpp"
 	@echo "... robot_arm_simulatie_bp_geneus"
+	@echo "... src/VirtualController.o"
+	@echo "... src/VirtualController.i"
+	@echo "... src/VirtualController.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"

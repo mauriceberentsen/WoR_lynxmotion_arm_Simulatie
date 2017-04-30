@@ -81,14 +81,40 @@ robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/controller.cpp.o.provi
 robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/controller.cpp.o.provides.build: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/controller.cpp.o
 
 
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/flags.make
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o: /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/VirtualController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o"
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/robot_arm_simulatie_bp && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/controller_node.dir/src/VirtualController.cpp.o -c /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/VirtualController.cpp
+
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/controller_node.dir/src/VirtualController.cpp.i"
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/robot_arm_simulatie_bp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/VirtualController.cpp > CMakeFiles/controller_node.dir/src/VirtualController.cpp.i
+
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller_node.dir/src/VirtualController.cpp.s"
+	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/robot_arm_simulatie_bp && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/src/robot_arm_simulatie_bp/src/VirtualController.cpp -o CMakeFiles/controller_node.dir/src/VirtualController.cpp.s
+
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.requires:
+
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.requires
+
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.provides: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.requires
+	$(MAKE) -f robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.provides.build
+.PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.provides
+
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.provides.build: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o
+
+
 # Object files for target controller_node
 controller_node_OBJECTS = \
-"CMakeFiles/controller_node.dir/src/controller.cpp.o"
+"CMakeFiles/controller_node.dir/src/controller.cpp.o" \
+"CMakeFiles/controller_node.dir/src/VirtualController.cpp.o"
 
 # External object files for target controller_node
 controller_node_EXTERNAL_OBJECTS =
 
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/controller.cpp.o
+/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build.make
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: /opt/ros/kinetic/lib/libroscpp.so
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
@@ -110,7 +136,7 @@ controller_node_EXTERNAL_OBJECTS =
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/robot_arm_simulatie_bp/controller_node"
 	cd /home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build/robot_arm_simulatie_bp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/controller_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -119,6 +145,7 @@ robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build: /home/agit/Document
 .PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/build
 
 robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/requires: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/controller.cpp.o.requires
+robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/requires: robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/src/VirtualController.cpp.o.requires
 
 .PHONY : robot_arm_simulatie_bp/CMakeFiles/controller_node.dir/requires
 
