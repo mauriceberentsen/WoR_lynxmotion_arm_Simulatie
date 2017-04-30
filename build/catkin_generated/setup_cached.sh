@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/build"
+export PYTHONPATH="/home/agit/Documents/github/bp_simulatie/WoR_lynxmotion_arm_Simulatie/devel/lib/python2.7/dist-packages:$PYTHONPATH"

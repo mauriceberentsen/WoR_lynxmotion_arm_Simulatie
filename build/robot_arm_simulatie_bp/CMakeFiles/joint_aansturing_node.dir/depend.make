@@ -81,7 +81,11 @@ robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/sensor_msgs/JointState.h
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/std_msgs/Float64MultiArray.h
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/std_msgs/Int32MultiArray.h
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/std_msgs/MultiArrayDimension.h
+robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/std_msgs/MultiArrayLayout.h
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/tf/LinearMath/Matrix3x3.h
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/tf/LinearMath/MinMax.h
 robot_arm_simulatie_bp/CMakeFiles/joint_aansturing_node.dir/src/joint_aansturing.cpp.o: /opt/ros/kinetic/include/tf/LinearMath/QuadWord.h
