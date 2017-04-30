@@ -163,29 +163,29 @@ void VirtualController::singleServoCommand(const std::string& command, bool spd,
 
 	  if(std::regex_match(command, matchResults, e))
 	  {
-		  long speed = -1;
-		  long time  = -1;
+		  long speed_value = -1;
+		  long time_value  = -1;
 		  ROS_INFO("I heard: [%s]", command.c_str());
-		  ROS_INFO("I saw_MatchResults 0: [%s]", matchResults.str(0).c_str());
-		  ROS_INFO("I saw_MatchResults 1: [%s]", matchResults.str(1).c_str());
-		  ROS_INFO("I saw_MatchResults 2: [%s]", matchResults.str(2).c_str());
-		  ROS_INFO("I saw_MatchResults 3: [%s]", matchResults.str(3).c_str());
+		  ROS_INFO("I saw_MatchResults 0: [%s]", matchResults.str(0).c_str()); //pin
+		  ROS_INFO("I saw_MatchResults 1: [%s]", matchResults.str(1).c_str()); //pwm
+		  ROS_INFO("I saw_MatchResults 2: [%s]", matchResults.str(2).c_str()); //speed
+		  ROS_INFO("I saw_MatchResults 3: [%s]", matchResults.str(3).c_str()); //time
 		  ROS_INFO("I saw_MatchResults 4: [%s]", matchResults.str(4).c_str());
 
 		  if(spd && time)
 		  {
-			 speed = stoul(matchResults.str(2));
-			 time = stoul(matchResults.str(3));
+			 speed_value = stoul(matchResults.str(3));
+			 time_value = stoul(matchResults.str(4));
 		  }
 		  else if(spd)
 		  {
-			  speed = stoul(matchResults.str(2));
+			  speed_value = stoul(matchResults.str(3));
 		  }
 		  else if(time)
 		  {
-			  time = stoul(matchResults.str(2));
+			  time_value = stoul(matchResults.str(3));
 		  }
-		  pubJointStates(stoul(matchResults.str(1)),stoul(matchResults.str(2)),speed,time);
+		  pubJointStates(stoul(matchResults.str(1)),stoul(matchResults.str(2)),speed_value,time_value);
 	  }
 	  else
 	  {
@@ -196,6 +196,7 @@ void VirtualController::singleServoCommand(const std::string& command, bool spd,
 
 //restricties in graden staan in comentaar
 //pin nummer aan gehouden volgens beroepsproduct 1 interface
+//Alleen pin 4 en 5 zijn omgedraait t.o.v. beroepsproduct 1
 void VirtualController::pubJointStates(std::size_t pin, std::size_t pwm,long speed, long time)
 {
 	robot_arm_simulatie_bp::Num temp_joint_pos = joint_pos;
@@ -216,15 +217,15 @@ void VirtualController::pubJointStates(std::size_t pin, std::size_t pwm,long spe
 	{
 		joint_pos.data.at(pin) = pwmToRadial(pwm,630,2430,-M_PI_2,M_PI_2); //-90 graden tot 90 graden wrist
 	}
-	else if(pin==5)
-	{
-		joint_pos.data.at(pin-1) = pwmToRadial(pwm,700,2400,-M_PI_2,M_PI_2); //-90 graden tot 90 graden wrist rotate
-	}
 	else if(pin==4)
 	{
+		joint_pos.data.at(pin) = pwmToRadial(pwm,700,2400,-M_PI_2,M_PI_2); //-90 graden tot 90 graden wrist rotate
+	}
+	else if(pin==5)
+	{
 		double gripper_state = pwmToRadial(pwm,850,2300,-0.02,0.02); //Full open, Full dicht values gripper
+		joint_pos.data.at(pin) = gripper_state;
 		joint_pos.data.at(pin+1) = gripper_state;
-		joint_pos.data.at(pin+2) = gripper_state;
 	}
 	else
 	{
@@ -232,11 +233,36 @@ void VirtualController::pubJointStates(std::size_t pin, std::size_t pwm,long spe
 		return;
 	}
 
-	//ros::Rate loop_rate(10);
-	//if(time)
-	//{
-		pub_.publish(joint_pos);
-	//}
+//alles hier onder in progress
+//	if(time>0)
+//	{
+//		double time_in_sec = time/1000;
+//		//ros::Rate loop_rate(1/time);
+//		ros::Rate loop_rate(1);
+//
+//		ROS_INFO("time! [%f]",time);
+//		ROS_INFO("time_in_sec! [%f]",time_in_sec);
+//		ROS_INFO("joint! [%f]",joint_pos.data.at(pin));
+//		ROS_INFO("temp_joint! [%f]",temp_joint_pos.data.at(pin));
+//		double radial_diff = joint_pos.data.at(pin) - temp_joint_pos.data.at(pin);
+//		double steps = radial_diff/time_in_sec;
+//
+//		while(temp_joint_pos.data.at(pin)!=joint_pos.data.at(pin))
+//		{
+//			ROS_INFO("HELLO! [%f]",steps);
+//			temp_joint_pos.data.at(pin)+= steps;
+//			if(pin == 5)
+//			{
+//			  temp_joint_pos.data.at(pin+1)+= steps;
+//			}
+//			pub_.publish(temp_joint_pos);
+//			//sleep(1);
+//			loop_rate.sleep();
+//		}
+//	}
+
+	//onderste in comentaar zetten als bovenste code wordt gebruikt
+	pub_.publish(joint_pos);
 }
 
 double VirtualController::pwmToRadial(std::size_t input_pwm,
